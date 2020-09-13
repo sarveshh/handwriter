@@ -10,6 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/sarveshh/handwriter.git"
   },
-  "author": "Sarvesh Patil",
-  "license": "MIT"
+  "keywords": [],
+  "author": "Sarvesh Patil <sarveshp273@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/sarveshh/handwriter#readme"
 }

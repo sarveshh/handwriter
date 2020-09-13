@@ -1,0 +1,15 @@
+{
+  "name": "handwriter",
+  "version": "1.0.0",
+  "description": "Making student's life easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarveshh/handwriter.git"
+  },
+  "author": "Sarvesh Patil",
+  "license": "MIT"
+}

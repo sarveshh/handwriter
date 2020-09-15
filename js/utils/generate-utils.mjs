@@ -95,6 +95,42 @@ function renderOutput(outputImages) {
     `
     )
     .join('');
+
+    document.querySelector('#previewdiv').innerHTML = outputImages
+    .map(
+      (outputImageCanvas, index) => `
+    <div 
+      class="output-image-container" 
+      style="position: relative;display: inline-block;"
+    >
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Image preview</h2>
+      </header>
+      <button 
+        data-index="${index}" 
+        class="close-button close-${index}">
+          &times;
+      </button>
+      <img 
+        class="shadow" 
+        alt="Output image ${index}" 
+        src="${outputImageCanvas.toDataURL('image/jpeg')}"
+      />
+      <footer class="w3-container w3-black">
+      <div style="text-align: center">
+        <a 
+          class="button download-image-button" 
+          download 
+          href="${outputImageCanvas.toDataURL('image/jpeg')}
+        ">Download Image</a>
+      </div>
+      </footer>
+    </div>
+    `
+    );
+    
 }
 
 export { removePaperStyles, applyPaperStyles, renderOutput };

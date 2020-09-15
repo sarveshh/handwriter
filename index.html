@@ -282,10 +282,25 @@
                   border: 0.3px solid var(--elevation-background);
                   width: 80%;
                 " />
-              <div style="text-align: center; padding: 30px 0px;">
-                <button type="submit" data-testid="generate-image-button" class="button generate-image-button" id="generate">
+              <div style="text-align: center;">
+
+                <button onclick="document.getElementById('previewbox').style.display='block'"
+                  class="w3-button w3-black">Preview Current Page</button>
+
+                <div id="previewbox" class="w3-modal">
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('previewbox').style.display='none'" id="previewdiv"
+                        class="w3-button w3-display-topright">&times;</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" data-testid="generate-image-button" class="button generate-image-button"
+                  id="generate">
                   Generate Output
                 </button>
+
               </div>
             </div>
           </div>
@@ -331,6 +346,7 @@
   </section>
   </div>
 
+  
   <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
   <script type="module" src="js/app.mjs"></script>
   <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
@@ -363,6 +379,44 @@
       else document.body.classList.add('dark');
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.classList.add('dark');
+    }
+
+
+     function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
   </script>
 </body>

@@ -2,28 +2,11 @@ import { addFontFromFile, formatText } from './utils/helpers.mjs';
 import { generateImages, downloadAsPDF } from './generate-images.mjs';
 import { setInkColor, toggleDrawCanvas } from './utils/draw.mjs';
 
-/**
- *
- * Hi there! This is the entry file of the tool and deals with adding event listeners
- * and some other functions.
- *
- * To contribute, you can follow the imports above and make changes in the file
- * related to the issue you've choosen.
- *
- * If you have any questions related to code, you can drop them in my Twitter DM @saurabhcodes
- * or in my email at saurabhdaware99@gmail.com
- *
- * Thanks! and Happy coding 🌻
- *
- */
 
 const pageEl = document.querySelector('.page-a');
 
 const setTextareaStyle = (attrib, v) => (pageEl.style[attrib] = v);
 
-/**
- * Add event listeners here, they will be automatically mapped with addEventListener later
- */
 const EVENT_MAP = {
   '#generate-image-form': {
     on: 'submit',
@@ -120,9 +103,6 @@ for (const eventSelector in EVENT_MAP) {
     );
 }
 
-/**
- * This makes toggles, accessible.
- */
 document.querySelectorAll('.switch-toggle input').forEach((toggleInput) => {
   toggleInput.addEventListener('change', (e) => {
     if (toggleInput.checked) {
@@ -138,31 +118,3 @@ document.querySelectorAll('.switch-toggle input').forEach((toggleInput) => {
     }
   });
 });
-
-/**
- * Set GitHub Contributors
- */
-
-fetch(
-  'https://api.github.com/repos/saurabhdaware/text-to-handwriting/contributors'
-)
-  .then((res) => res.json())
-  .then((res) => {
-    document.querySelector('#project-contributors').innerHTML = res
-      .map(
-        (contributor) => /* html */ `
-        <div class="contributor-profile shadow">
-          <a href="${contributor.html_url}">
-            <img 
-              alt="GitHub avatar of contributor ${contributor.login}" 
-              class="contributor-avatar" 
-              loading="lazy" 
-              src="${contributor.avatar_url}" 
-            />
-            <div class="contributor-username">${contributor.login}</div>
-          </a>
-        </div>
-      `
-      )
-      .join('');
-  });

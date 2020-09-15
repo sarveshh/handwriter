@@ -5,7 +5,6 @@ const overlayEl = document.querySelector('.overlay');
 let paperContentPadding;
 
 function isFontErrory() {
-  // SOme fonts have padding top errors, this functions tells you if the current font has that;
   const currentHandwritingFont = document.body.style.getPropertyValue(
     '--handwriting-font'
   );
@@ -19,7 +18,6 @@ function applyPaperStyles() {
   pageEl.style.border = 'none';
   pageEl.style.overflowY = 'hidden';
 
-  // Adding class shadows even if effect is scanner
   if (document.querySelector('#page-effects').value === 'scanner') {
     overlayEl.classList.add('shadows');
   } else {
@@ -27,8 +25,7 @@ function applyPaperStyles() {
   }
 
   if (document.querySelector('#page-effects').value === 'scanner') {
-    // For scanner, we need shadow between 50deg to 120deg only
-    // Since If the lit part happens to be on margins, the margins get invisible
+    
     overlayEl.style.background = `linear-gradient(${
       Math.floor(Math.random() * (120 - 50 + 1)) + 50
     }deg, #0008, #0000)`;
@@ -72,7 +69,7 @@ function renderOutput(outputImages) {
   document.querySelector('#download-as-pdf-button').classList.add('show');
   document.querySelector('#output').innerHTML = outputImages
     .map(
-      (outputImageCanvas, index) => /* html */ `
+      (outputImageCanvas, index) => `
     <div 
       class="output-image-container" 
       style="position: relative;display: inline-block;"

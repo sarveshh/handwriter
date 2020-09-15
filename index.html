@@ -64,10 +64,10 @@
               <span style="display: flex; align-items: baseline;">
                 <label class="block" for="note" style="margin-right: 10px; font-size: 15px;">Type/Paste text
                   here</label>
-                <h5 style="margin-right: 10px;">Or</h5>
+                <h5 style="margin-right: 10px;font-family: 'Roboto', sans-serif;">Or</h5>
                 <div>
                   <button id="draw-diagram-button" type="button" style="font-size: 0.9rem; margin-top: 5px;"
-                    class="draw-button">
+                    class="draw-button w3-hover-shadow w3-hover-red">
                     Draw
                   </button>
                 </div>
@@ -146,6 +146,15 @@
                       </option>
                       <option style="font-family: 'Kristi', cursive; font-size: 13pt;" value="'Kristi', cursive">
                         Kristi
+                      </option>
+                      <option value="khand_medium">
+                        Khand Medium
+                      </option>
+                      <option value="brown_bag">
+                        Brown Bag
+                      </option>
+                      <option value="really_free">
+                        Really Free
                       </option>
                       <option style="font-family: 'Nothing You Could Do', cursive; font-size: 13pt;"
                         value="'Nothing You Could Do', cursive">
@@ -325,7 +334,6 @@
   <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
   <script type="module" src="js/app.mjs"></script>
   <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script>
     function toggleTheme(toggleButton) {
       if (document.body.classList.contains('dark')) {

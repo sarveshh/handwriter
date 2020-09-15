@@ -27,6 +27,18 @@ body.dark {
   font-family: 'Hindi_Font';
   src: url(../fonts/Hindi_Type.ttf);
 }
+@font-face {
+  font-family: 'khand_medium';
+  src: url(../fonts/khand-medium.ttf);
+}
+@font-face {
+  font-family: 'brown_bag';
+  src: url(../fonts/brown-bag.ttf);
+}
+@font-face {
+  font-family: 'really_free';
+  src: url(../fonts/really-free.ttf);
+}
 
 * {
   box-sizing: border-box;

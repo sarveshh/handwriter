@@ -15,9 +15,8 @@ function addFontFromFile(fileObj) {
 
 /**
  * @method createPDF
- * @param imgs array of images (in base64)
+ * @param imgs
  * @description
- * Creates PDF from list of given images
  */
 function createPDF(imgs) {
   const doc = new jsPDF('p', 'pt', 'a4');

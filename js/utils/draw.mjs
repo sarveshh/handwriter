@@ -1,9 +1,5 @@
 import { isMobile } from './helpers.mjs';
 
-/**
- * This file deals with what happens when you click "Draw" button text to handwriting.
- */
-
 let inkColor = '#000f55';
 const pointSize = isMobile ? 0.5 : 1;
 let lastX;
@@ -13,7 +9,7 @@ const drawCanvas = document.querySelector('canvas#diagram-canvas');
 const ctx = drawCanvas.getContext('2d');
 ctx.fillStyle = 'transparent';
 ctx.fillRect(0, 0, drawCanvas.width, drawCanvas.height);
-// Set smaller canvas on mobiles
+
 if (isMobile) {
   drawCanvas.height = 150;
   drawCanvas.width = 300;
@@ -43,12 +39,12 @@ function drawPoint(x, y) {
     ctx.stroke();
   }
 
-  ctx.beginPath(); // Start path
+  ctx.beginPath();
   ctx.fillStyle = inkColor;
 
-  ctx.arc(...fixPositions(x, y), pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
+  ctx.arc(...fixPositions(x, y), pointSize, 0, Math.PI * 2, true); 
 
-  ctx.fill(); // Close
+  ctx.fill(); 
 
   lastX = x;
   lastY = y;
@@ -57,7 +53,7 @@ function drawPoint(x, y) {
 function toggleDrawCanvas() {
   const drawContainer = document.querySelector('.draw-container');
   if (drawContainer.classList.contains('show')) {
-    // draw canvas is currently shown
+
     document.querySelector('main').style.display = 'block';
   } else {
     document.querySelector('main').style.display = 'none';
@@ -81,7 +77,7 @@ function downloadFile() {
 
 function addToPaper() {
   document.querySelector('#note').innerHTML =
-    /* html */ `
+  `
     <img style="width: 100%;" src="${drawCanvas.toDataURL('image/png')}" />
   ` + document.querySelector('#note').innerHTML;
   toggleDrawCanvas();
@@ -169,7 +165,7 @@ const onTouchMove = (e) => {
   drawPoint(touchX, touchY);
 };
 
-/* Event listeners */
+
 document.querySelector('#clear-draw-canvas').addEventListener('click', clear);
 document
   .querySelector('#add-to-paper-button')

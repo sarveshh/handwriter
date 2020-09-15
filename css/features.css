@@ -1,0 +1,147 @@
+
+.dark-mode-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  border: none;
+  background: transparent;
+}
+body:not(.user-is-tabbing) .dark-mode-toggle:focus {
+  outline: none;
+}
+.dark-mode-toggle .moon {
+  padding: 10px;
+}
+.dark-mode-toggle .sun {
+  padding: 5px;
+}
+body .dark-mode-toggle .moon {
+  display: none;
+}
+body .dark-mode-toggle .sun {
+  display: inline-block;
+}
+body.dark .dark-mode-toggle .moon {
+  display: inline-block;
+}
+body.dark .dark-mode-toggle .sun {
+  display: none;
+}
+
+
+.switch-toggle {
+  position: relative;
+  display: block;
+  margin-top: 6px;
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: var(--elevation-background);
+}
+
+.switch-toggle input {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+
+.switch-toggle div {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #9994;
+  transition: 0.1s ease;
+}
+
+.switch-toggle input:focus + div {
+  outline: 1;
+}
+
+.switch-toggle input:checked + div {
+  left: 28px;
+  background-color: #999f;
+}
+
+.switch-toggle.outer div {
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 5px;
+}
+
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    right: 10px;
+  }
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 999999;
+  color: #ddd;
+  padding: 100px;
+  display: none;
+}
+
+.popup-container.show {
+  display: block;
+}
+
+.popup-container .close-button {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 20px 30px;
+  cursor: pointer;
+  color: #ddd;
+  background-color: transparent;
+  border: none;
+  font-size: 50pt;
+  font-weight: bold;
+}
+
+.popup-container .close-button:hover {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+#diagram-canvas {
+  cursor: url('../images/favicon-32x32-3.png'), crosshair;
+}
+
+.contributor-profile {
+  display: inline-block;
+  margin: 10px 5px;
+  text-align: center;
+  background-color: var(--elevation-background);
+  color: var(--font-color-primary);
+  padding: 10px;
+  width: 130px;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 170px;
+  box-shadow: 4px 3px 16px -3px #0009;
+}
+
+img.contributor-avatar {
+  width: 100%;
+}
+
+.contributor-profile a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  font-weight: bold;
+  display: block;
+  font-size: 10pt;
+}
+
+.contributor-username {
+  margin-top: 7px;
+}

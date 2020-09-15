@@ -1,10 +1,13 @@
 {
   "name": "handwriter",
-  "version": "1.0.0",
-  "description": "Making student's life easier",
-  "main": "index.js",
+  "version": "1.0.0-rc.1",
+  "description": "Assignment simplifier",
+  "main": "js/app.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "serve ."
   },
   "repository": {
     "type": "git",
@@ -13,5 +16,7 @@
   "keywords": [],
   "author": "Sarvesh Patil <sarveshp273@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/sarveshh/handwriter#readme"
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
 }

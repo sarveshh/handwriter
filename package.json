@@ -13,9 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/sarveshh/handwriter.git"
   },
-  "engines": {
-    "node": "12.14.0"
-  },
   "keywords": [],
   "author": "Sarvesh Patil <sarveshp273@gmail.com>",
   "license": "MIT",

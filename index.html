@@ -10,7 +10,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/features.css" />
-  <link rel="stylesheet" href="./css/w3.css">
+  <link rel="stylesheet" href="./css/external/w3.css">
 </head>
 
 <body>
@@ -38,256 +38,265 @@
       <div style="display: flex; flex-direction: column;">
         <span style="display: flex; align-items: baseline;">
           <p class="heading">Handwriter</p>
-          <p style="font-size: 15px;">Nomore lengthy assignments</p>
+          <p style="font-size: 15px;">No more lengthy assignments</p>
         </span>
       </div>
-      <a class="scrollbutton" href="#section2"><img src="./images/scroll.svg" height="40px"></a>
+      <a class="scrollbutton" href="#input" style="margin-right: 18px;">
+        <span>&emsp;</span>
+        <img src="./images/scroll.svg" height="40px">
+        <div class="circle" style="animation-delay: -3s"></div>
+        <div class="circle" style="animation-delay: -2s"></div>
+        <div class="circle" style="animation-delay: -1s"></div>
+        <div class="circle" style="animation-delay: 0s"></div>
+        <p>Get Started</p>
+      </a>
     </div>
-    <div class="w3-container">
-      <h2 style="text-align: center;" id="section2" class="w3-sand w3-card">Input</h2>
-    </div>
 
-    <section class="generate-image-section">
-      <form id="generate-image-form">
-        <div class="display-flex output-grid responsive-flex">
-          <div class="flex-1 page-container-super">
-            <span style="display: flex; align-items: baseline;">
-              <label class="block" for="note" style="margin-right: 10px; font-size: 15px;">Type/Paste text
-                here</label>
-              <h5 style="margin-right: 10px;">Or</h5>
-              <div>
-                <button id="draw-diagram-button" type="button" style="font-size: 0.9rem; margin-top: 5px;"
-                  class="draw-button">
-                  Draw
-                </button>
-              </div>
-            </span>
+    <div class="fullpage" id="input">
+      <div class="">
+        <h2 style="text-align: center;" class="w3-sand w3-card">Input</h2>
+      </div>
 
-
-            <div class="flex-1 page-container">
-              <div class="page-a margined lines">
-                <div contenteditable="true" class="top-margin"></div>
-                <div class="display-flex left-margin-and-content">
-                  <div contenteditable="true" class="left-margin"></div>
-                  <div class="paper-content" id="note" contenteditable="true">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut rhoncus dui eget tortor feugiat iaculis. Morbi et dolor
-                    in felis viverra efficitur. Integer id laoreet arcu.
-                    Mauris turpis nibh, scelerisque sed tristique non,
-                    hendrerit in erat. Duis interdum nisl risus, ac ultrices
-                    ipsum auctor at. Aliquam faucibus iaculis metus sit amet
-                    tincidunt. Vestibulum cursus urna vel nunc imperdiet
-                    suscipit. Ut eu augue egestas, porta orci lobortis,
-                    pharetra orci. Morbi eu tellus quis nisi tempor accumsan
-                    nec eu urna. empor, ullamcorper tortor. Mauris quis
-                    fermentum augue. Phasellus ac nisl hendrerit, fringilla
-                    enim aliquam, placerat odio. Ut tortor nisi, pellentesque
-                    sed nisi at, hendrerit imperdiet turpis. Proin interdum
-                    porttitor metus at hendrerit. Proin ipsum nisl, lacinia
-                    vitae purus ullamcorper, maximus convallis sem. Sed nec
-                    lacinia lorem. Duis arcu metus, cursus non odio quis,
-                    tincidunt tempor augue. Donec eget vestibulum risus.
-                    Nullam blandit quis est vitae feugiat.
-                  </div>
-                </div>
-                <div class="overlay"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="customization-col">
-
-            <div style="padding: 5px 0px 5px 0px;">
-              <b>Customizations</b> <small>(Optional)</small>
-            </div>
-
-            <fieldset>
-              <legend>Handwriting Options</legend>
-
-              <div class="category-grid">
+      <section class="generate-image-section">
+        <form id="generate-image-form">
+          <div class="display-flex output-grid responsive-flex">
+            <div class="flex-1 page-container-super">
+              <span style="display: flex; align-items: baseline;">
+                <label class="block" for="note" style="margin-right: 10px; font-size: 15px;">Type/Paste text
+                  here</label>
+                <h5 style="margin-right: 10px;">Or</h5>
                 <div>
-                  <label class="block" for="handwriting-font">Handwriting Font</label>
-                  <select id="handwriting-font">
-                    <option selected style="font-family: 'Homemade Apple';" value="'Homemade Apple', cursive">
-                      Homemade Apple
-                    </option>
-                    <option value="Hindi_Font">
-                      Kruti-dev(Hindi)
-                    </option>
-                    <option style="font-family: 'Caveat', cursive; font-size: 13pt;" value="'Caveat', cursive">
-                      Caveat
-                    </option>
-                    <option style="
+                  <button id="draw-diagram-button" type="button" style="font-size: 0.9rem; margin-top: 5px;"
+                    class="draw-button">
+                    Draw
+                  </button>
+                </div>
+              </span>
+
+
+              <div class="flex-1 page-container">
+                <div class="page-a margined lines">
+                  <div contenteditable="true" class="top-margin"></div>
+                  <div class="display-flex left-margin-and-content">
+                    <div contenteditable="true" class="left-margin"></div>
+                    <div class="paper-content" id="note" contenteditable="true">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut rhoncus dui eget tortor feugiat iaculis. Morbi et dolor
+                      in felis viverra efficitur. Integer id laoreet arcu.
+                      Mauris turpis nibh, scelerisque sed tristique non,
+                      hendrerit in erat. Duis interdum nisl risus, ac ultrices
+                      ipsum auctor at. Aliquam faucibus iaculis metus sit amet
+                      tincidunt. Vestibulum cursus urna vel nunc imperdiet
+                      suscipit. Ut eu augue egestas, porta orci lobortis,
+                      pharetra orci. Morbi eu tellus quis nisi tempor accumsan
+                      nec eu urna. empor, ullamcorper tortor. Mauris quis
+                      fermentum augue. Phasellus ac nisl hendrerit, fringilla
+                      enim aliquam, placerat odio. Ut tortor nisi, pellentesque
+                      sed nisi at, hendrerit imperdiet turpis. Proin interdum
+                      porttitor metus at hendrerit. Proin ipsum nisl, lacinia
+                      vitae purus ullamcorper, maximus convallis sem. Sed nec
+                      lacinia lorem. Duis arcu metus, cursus non odio quis,
+                      tincidunt tempor augue. Donec eget vestibulum risus.
+                      Nullam blandit quis est vitae feugiat.
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="customization-col">
+
+              <div style="padding: 5px 0px 5px 0px;">
+                <b>Customizations</b> <small>(Optional)</small>
+              </div>
+
+              <fieldset>
+                <legend>Handwriting Options</legend>
+
+                <div class="category-grid">
+                  <div>
+                    <label class="block" for="handwriting-font">Handwriting Font</label>
+                    <select id="handwriting-font">
+                      <option selected style="font-family: 'Homemade Apple';" value="'Homemade Apple', cursive">
+                        Homemade Apple
+                      </option>
+                      <option value="Hindi_Font">
+                        Kruti-dev(Hindi)
+                      </option>
+                      <option style="font-family: 'Caveat', cursive; font-size: 13pt;" value="'Caveat', cursive">
+                        Caveat
+                      </option>
+                      <option style="
                           font-family: 'Liu Jian Mao Cao';
                           font-size: 13pt;
                         " value="'Liu Jian Mao Cao', cursive">
-                      Liu Jian Mao Cao
-                    </option>
-                    <option style="font-family: 'Indie Flower', cursive; font-size: 13pt;"
-                      value="'Indie Flower', cursive">
-                      Indie Flower
-                    </option>
-                    <option style="font-family: 'Handlee', cursive; font-size: 13pt;" value="'Handlee', cursive">
-                      Handlee
-                    </option>
-                    <option style="font-family: 'Cedarville Cursive', cursive; font-size: 13pt;"
-                      value="'Cedarville Cursive', cursive">
-                      Cedarville Cursive
-                    </option>
-                    <option style="font-family: 'Kalam', cursive; font-size: 13pt;" value="'Kalam', cursive">
-                      Kalam
-                    </option>
-                    <option style="font-family: 'Kristi', cursive; font-size: 13pt;" value="'Kristi', cursive">
-                      Kristi
-                    </option>
-                    <option style="font-family: 'Nothing You Could Do', cursive; font-size: 13pt;"
-                      value="'Nothing You Could Do', cursive">
-                      Nothing You Could Do
-                    </option>
-                  </select>
-                </div>
+                        Liu Jian Mao Cao
+                      </option>
+                      <option style="font-family: 'Indie Flower', cursive; font-size: 13pt;"
+                        value="'Indie Flower', cursive">
+                        Indie Flower
+                      </option>
+                      <option style="font-family: 'Handlee', cursive; font-size: 13pt;" value="'Handlee', cursive">
+                        Handlee
+                      </option>
+                      <option style="font-family: 'Cedarville Cursive', cursive; font-size: 13pt;"
+                        value="'Cedarville Cursive', cursive">
+                        Cedarville Cursive
+                      </option>
+                      <option style="font-family: 'Kristi', cursive; font-size: 13pt;" value="'Kristi', cursive">
+                        Kristi
+                      </option>
+                      <option style="font-family: 'Nothing You Could Do', cursive; font-size: 13pt;"
+                        value="'Nothing You Could Do', cursive">
+                        Nothing You Could Do
+                      </option>
+                    </select>
+                  </div>
 
-                <div class="upload-handwriting-container">
-                  <label class="block" for="font-file">Upload your handwriting font <small>(Beta)</small>&nbsp;
-                    <a style="font-size: 1.1rem;" title="How to add your own handwriting">
-                      &#9432;
-                    </a>
-                  </label>
-                  <input accept=".ttf, .otf" type="file" id="font-file" />
+                  <div class="upload-handwriting-container">
+                    <label class="block" for="font-file">Upload your handwriting font <small>(Beta)</small>&nbsp;
+                      <a style="font-size: 1.1rem;" title="How to add your own handwriting">
+                        &#9432;
+                      </a>
+                    </label>
+                    <input accept=".ttf, .otf" type="file" id="font-file" />
+                  </div>
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
-            <fieldset>
-              <legend>Page & Text Options</legend>
+              <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
+              <fieldset>
+                <legend>Page & Text Options</legend>
 
-              <div class="category-grid">
-                <div class="postfix-input" data-postfix="pt">
-                  <label for="font-size">Font Size</label>
-                  <input id="font-size" min="0" step="0.5" value="10" type="number" />
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="font-size">Font Size</label>
+                    <input id="font-size" min="0" step="0.5" value="10" type="number" />
+                  </div>
+                  <div>
+                    <label class="block" for="ink-color">Ink Color</label>
+                    <select id="ink-color">
+                      <option default value="#000f55">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="#ba3807">Red</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-size">Page Size</label>
+                    <select id="page-size">
+                      <option default value="a4">A4 &nbsp;</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-effects">Effects</label>
+                    <select id="page-effects">
+                      <option default value="shadows">Shadows</option>
+                      <option value="scanner">Scanner</option>
+                      <option value="no-effect">No Effect</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="resolution">Resolution</label>
+                    <select id="resolution">
+                      <option value="0.8">Very Low</option>
+                      <option value="1">Low</option>
+                      <option selected value="2">Normal</option>
+                      <option value="3">High</option>
+                      <option value="4">Very High</option>
+                    </select>
+                  </div>
                 </div>
-                <div>
-                  <label class="block" for="ink-color">Ink Color</label>
-                  <select id="ink-color">
-                    <option default value="#000f55">Blue</option>
-                    <option value="black">Black</option>
-                    <option value="#ba3807">Red</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block" for="page-size">Page Size</label>
-                  <select id="page-size">
-                    <option default value="a4">A4 &nbsp;</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block" for="page-effects">Effects</label>
-                  <select id="page-effects">
-                    <option default value="shadows">Shadows</option>
-                    <option value="scanner">Scanner</option>
-                    <option value="no-effect">No Effect</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block" for="resolution">Resolution</label>
-                  <select id="resolution">
-                    <option value="0.8">Very Low</option>
-                    <option value="1">Low</option>
-                    <option selected value="2">Normal</option>
-                    <option value="3">High</option>
-                    <option value="4">Very High</option>
-                  </select>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <fieldset>
-              <legend>Spacing Options</legend>
+              <fieldset>
+                <legend>Spacing Options</legend>
 
-              <div class="category-grid">
-                <div class="postfix-input" data-postfix="px">
-                  <label for="top-padding">Vertical Position</label>
-                  <input id="top-padding" min="0" value="5" type="number" />
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="top-padding">Vertical Position</label>
+                    <input id="top-padding" min="0" value="5" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="word-spacing">Word Spacing</label>
+                    <input id="word-spacing" min="0" value="0" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="letter-spacing">Letter Spacing</label>
+                    <input id="letter-spacing" value="0" type="number" />
+                  </div>
                 </div>
-                <div class="postfix-input" data-postfix="px">
-                  <label for="word-spacing">Word Spacing</label>
-                  <input id="word-spacing" min="0" value="0" type="number" />
-                </div>
-                <div class="postfix-input" data-postfix="pt">
-                  <label for="letter-spacing">Letter Spacing</label>
-                  <input id="letter-spacing" value="0" type="number" />
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
-            <fieldset>
-              <legend>Margin & Line Options</legend>
+              <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
+              <fieldset>
+                <legend>Margin & Line Options</legend>
 
-              <div class="category-grid">
-                <div>
-                  <label for="paper-margin-toggle">Paper Margin:
-                    <span aria-label="paper margin status" class="status">on</span>
-                  </label>
-                  <label class="switch-toggle outer">
-                    <input aria-checked="true" checked aria-label="Paper Margin Button" id="paper-margin-toggle"
-                      type="checkbox" />
-                    <div></div>
-                  </label>
-                </div>
+                <div class="category-grid">
+                  <div>
+                    <label for="paper-margin-toggle">Paper Margin:
+                      <span aria-label="paper margin status" class="status">on</span>
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input aria-checked="true" checked aria-label="Paper Margin Button" id="paper-margin-toggle"
+                        type="checkbox" />
+                      <div></div>
+                    </label>
+                  </div>
 
-                <div>
-                  <label for="paper-line-toggle">Paper Lines:
-                    <span aria-label="paper line status" class="status">on</span>
-                  </label>
-                  <label class="switch-toggle outer">
-                    <input aria-checked="true" checked aria-label="Paper Line Button" id="paper-line-toggle"
-                      type="checkbox" />
-                    <div></div>
-                  </label>
+                  <div>
+                    <label for="paper-line-toggle">Paper Lines:
+                      <span aria-label="paper line status" class="status">on</span>
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input aria-checked="true" checked aria-label="Paper Line Button" id="paper-line-toggle"
+                        type="checkbox" />
+                      <div></div>
+                    </label>
+                  </div>
+                  <div class="experimental">
+                    <label for="paper-curve-toggle">Paper Curve:
+                      <span aria-label="paper curve status" class="status">off</span>
+                    </label>
+                    <label title="Paper Curve (Yet to be implemented)" class="switch-toggle outer"
+                      style="cursor: not-allowed !important;">
+                      <input aria-checked="false" aria-label="Paper Curve Button" id="paper-curve-toggle"
+                        type="checkbox" />
+                      <div></div>
+                    </label>
+                  </div>
                 </div>
-                <div class="experimental">
-                  <label for="paper-curve-toggle">Paper Curve:
-                    <span aria-label="paper curve status" class="status">off</span>
-                  </label>
-                  <label title="Paper Curve (Yet to be implemented)" class="switch-toggle outer"
-                    style="cursor: not-allowed !important;">
-                    <input aria-checked="false" aria-label="Paper Curve Button" id="paper-curve-toggle"
-                      type="checkbox" />
-                    <div></div>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <!-- GENERATE IMAGE BUTTONS -->
-            <hr style="
+              <!-- GENERATE IMAGE BUTTONS -->
+              <hr style="
                   border: 0.3px solid var(--elevation-background);
                   width: 80%;
                 " />
-            <div style="text-align: center; padding: 30px 0px;">
-              <button type="submit" data-testid="generate-image-button" class="button generate-image-button">
-                Generate Image
-              </button>
+              <div style="text-align: center; padding: 30px 0px;">
+                <button type="submit" data-testid="generate-image-button" class="button generate-image-button" id="generate">
+                  Generate Output
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
-    </section>
+        </form>
+      </section>
+    </div><br>
 
     <!-- OUTPUT -->
-    <section>
-      <h2 id="output-header">Output</h2>
-      <div id="output" class="output" style="text-align: center;">
-        Click "Generate Image" Button to generate new image.
-      </div>
-      <div style="text-align: center; padding: 30px;">
-        <button class="imp-button" id="download-as-pdf-button">
-          Download All Images as PDF
-        </button>
-      </div>
-    </section>
+    <div id="section3" class="fullpage-edit">
+      <section>
+        <h2 id="output-header" style="text-align: center;" class="w3-card w3-sand">Output</h2>
+        <div id="output" class="output" style="text-align: center;">
+          Click "Generate Image" Button to generate new image.
+        </div>
+        <div style="text-align: center; padding: 30px;">
+          <button class="imp-button" id="download-as-pdf-button">
+            Download All Images as PDF
+          </button>
+        </div>
+      </section>
   </main>
   <!-- Fixed Elements -->
   <section class="draw-container popup-container">
@@ -311,10 +320,12 @@
       </div>
     </div>
   </section>
-  
+  </div>
+
   <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
   <script type="module" src="js/app.mjs"></script>
   <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script>
     function toggleTheme(toggleButton) {
       if (document.body.classList.contains('dark')) {

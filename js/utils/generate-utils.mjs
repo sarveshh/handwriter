@@ -25,14 +25,12 @@ function applyPaperStyles() {
   }
 
   if (document.querySelector('#page-effects').value === 'scanner') {
-    
-    overlayEl.style.background = `linear-gradient(${
-      Math.floor(Math.random() * (120 - 50 + 1)) + 50
-    }deg, #0008, #0000)`;
+
+    overlayEl.style.background = `linear-gradient(${Math.floor(Math.random() * (120 - 50 + 1)) + 50
+      }deg, #0008, #0000)`;
   } else if (document.querySelector('#page-effects').value === 'shadows') {
-    overlayEl.style.background = `linear-gradient(${
-      Math.random() * 360
-    }deg, #0008, #0000)`;
+    overlayEl.style.background = `linear-gradient(${Math.random() * 360
+      }deg, #0008, #0000)`;
   }
 
   if (isFontErrory() && document.querySelector('#font-file').files.length < 1) {
@@ -96,7 +94,7 @@ function renderOutput(outputImages) {
     )
     .join('');
 
-    document.querySelector('#previewdiv').innerHTML = outputImages
+  document.querySelector('#previewdiv').innerHTML = outputImages
     .map(
       (outputImageCanvas, index) => `
     <div 
@@ -130,7 +128,7 @@ function renderOutput(outputImages) {
     </div>
     `
     );
-    
+
 }
 
 export { removePaperStyles, applyPaperStyles, renderOutput };

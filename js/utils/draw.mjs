@@ -27,7 +27,7 @@ function drawPoint(x, y) {
       return [eventX - canvasRect.left, eventY - canvasRect.top];
     }
 
-    return [eventX - canvasRect.left, eventY - canvasRect.top ];
+    return [eventX - canvasRect.left, eventY - canvasRect.top];
   }
 
   if (lastX && lastY && (x !== lastX || y !== lastY)) {
@@ -42,9 +42,9 @@ function drawPoint(x, y) {
   ctx.beginPath();
   ctx.fillStyle = inkColor;
 
-  ctx.arc(...fixPositions(x, y), pointSize, 0, Math.PI * 2, true); 
+  ctx.arc(...fixPositions(x, y), pointSize, 0, Math.PI * 2, true);
 
-  ctx.fill(); 
+  ctx.fill();
 
   lastX = x;
   lastY = y;
@@ -77,7 +77,7 @@ function downloadFile() {
 
 function addToPaper() {
   document.querySelector('#note').innerHTML =
-  `
+    `
     <img style="width: 100%;" src="${drawCanvas.toDataURL('image/png')}" />
   ` + document.querySelector('#note').innerHTML;
   toggleDrawCanvas();

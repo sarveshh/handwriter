@@ -42,7 +42,7 @@ export async function generateImages() {
 
   const paperContentEl = document.querySelector('.page-a .paper-content');
   const scrollHeight = paperContentEl.scrollHeight;
-  const clientHeight = 514; 
+  const clientHeight = 514;
 
   const totalPages = Math.ceil(scrollHeight / clientHeight);
 

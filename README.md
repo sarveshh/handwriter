@@ -16,7 +16,11 @@
 
 ## Sample Output
 
-<img width="400" alt="Sample image of output" src="./samples/sample1.jiff" />
+<img width="400" alt="Sample image of output" src="./samples/sample1.jpg" />
+<img width="400" alt="Sample image of output" src="./samples/sample2.jpg" />
+<img width="400" alt="Sample image of output" src="./samples/sample3.jpg" />
+<img width="400" alt="Sample image of output" src="./samples/sample4.jpg" />
+
 
 ## 📚 External Libraries
 

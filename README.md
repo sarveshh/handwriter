@@ -9,17 +9,16 @@
 <p>
  
   <img alt="NPM Version" src="https://img.shields.io/github/package-json/v/sarveshh/handwriter?style=for-the-badge&labelColor=black&logo=npm&color=darkred" /> 
-   <br/>
    <img alt="GitHub License MIT" src="https://img.shields.io/github/license/sarveshh/handwriter?style=for-the-badge&labelColor=black&logo=github"> 
 </p>
 
 
 ## Sample Output
 
-<img width="400" alt="Sample image of output" src="./samples/sample1.jpg" />
-<img width="400" alt="Sample image of output" src="./samples/sample2.jpg" />
-<img width="400" alt="Sample image of output" src="./samples/sample3.jpg" />
-<img width="400" alt="Sample image of output" src="./samples/sample4.jpg" />
+<img width="400" align="left" src="./samples/sample1.jpg" />
+<img width="400" align="right" alt="Sample image of output" src="./samples/sample2.jpg" />
+<img width="400" align="left" alt="Sample image of output" src="./samples/sample3.jpg" />
+<img width="400" align="right" alt="Sample image of output" src="./samples/sample4.jpg" />
 
 
 ## 📚 External Libraries

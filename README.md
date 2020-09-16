@@ -15,11 +15,7 @@
 
 ## Sample Output
 
-<img width="400" align="left" src="./samples/sample1.jpg" />
-<img width="400" align="right" alt="Sample image of output" src="./samples/sample2.jpg" />
-<img width="400" align="left" alt="Sample image of output" src="./samples/sample3.jpg" />
-<img width="400" align="right" alt="Sample image of output" src="./samples/sample4.jpg" />
+<img width="400"  src="./samples/sample1.jpg" /><img width="400"  src="./samples/sample2.jpg" /><img width="400" src="./samples/sample3.jpg" /><img width="400" src="./samples/sample4.jpg" />
 
-## Support
 
 [<img alt="Buy me a Coffee Button" width=200 src="https://c5.patreon.com/external/logo/become_a_patron_button.png">](https://www.patreon.com/bePatron?u=42419480) &nbsp; [<img alt="Buy me a Coffee Button" width=200 src="https://cdn.buymeacoffee.com/buttons/default-black.png">](https://www.buymeacoffee.com/sarveshh)

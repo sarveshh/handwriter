@@ -7,9 +7,7 @@
   This project is still under development
 </p>
 <p>
-  <a href="https://github.com/sarveshh/handwriter/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
+ 
   <img alt="NPM Version" src="https://img.shields.io/github/package-json/v/sarveshh/handwriter?style=for-the-badge&labelColor=black&logo=npm&color=darkred" /> 
    <br/>
    <img alt="GitHub License MIT" src="https://img.shields.io/github/license/sarveshh/handwriter?style=for-the-badge&labelColor=black&logo=github"> 

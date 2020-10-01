@@ -4,8 +4,9 @@ body {
   --font-color-primary: #333;
   --elevation-background: #f3f3f3;
   --link-color: #006eb8;
-  --font-family-primary: 'Roboto', cursive;
-  --handwriting-font: 'Homemade Apple', cursive;
+  --font-family-primary: "Roboto", cursive;
+  --handwriting-font: "Homemade Apple", cursive;
+  --background-img: #fff;
   --primary-color: #1a73e8;
   --ink-color: #000f55;
   --label-color: #333;
@@ -24,26 +25,29 @@ body.dark {
   --primary-button-color: #111;
 }
 @font-face {
-  font-family: 'Hindi_Font';
+  font-family: "Hindi_Font";
   src: url(../fonts/Hindi_Type.ttf);
 }
 @font-face {
-  font-family: 'khand_medium';
+  font-family: "khand_medium";
   src: url(../fonts/khand-medium.ttf);
 }
 @font-face {
-  font-family: 'brown_bag';
+  font-family: "brown_bag";
   src: url(../fonts/brown-bag.ttf);
 }
 @font-face {
-  font-family: 'really_free';
+  font-family: "really_free";
   src: url(../fonts/really-free.ttf);
 }
 
 * {
   box-sizing: border-box;
 }
-.per-page{
+#hidden-div {
+  display: none;
+}
+.per-page {
   height: 100vh;
   width: 100%;
 }
@@ -57,23 +61,23 @@ body {
 html {
   scroll-behavior: smooth;
 }
-#input{
-  height: max-content ;
+#input {
+  height: max-content;
 }
 .fullpage {
   height: 100vh;
   width: 100%;
 }
-.fullpage-edit{
+.fullpage-edit {
   min-height: fit-content;
   height: max-content;
 }
 
 .center {
-  display: flex!important;
-  flex-direction: column!important;
-  align-items: center!important;
-  justify-content: center!important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .heading {
@@ -96,12 +100,12 @@ html {
   position: absolute;
   opacity: 0;
   z-index: -100;
-  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
 }
 @keyframes scaleIn {
   from {
-    transform: scale(.5, .5);
-    opacity: .5;
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
   }
   to {
     transform: scale(2.5, 2.5);
@@ -140,7 +144,7 @@ label.block {
 }
 
 select {
-  background: url('../images/dropdown.svg') no-repeat;
+  background: url("../images/dropdown.svg") no-repeat;
   background-position: calc(100% - 14px) center;
   border: none;
   color: #333;
@@ -156,7 +160,7 @@ option {
 }
 
 body.dark select {
-  background: url('../images/dropdown-white.svg') no-repeat;
+  background: url("../images/dropdown-white.svg") no-repeat;
   background-position: calc(100% - 14px) center;
 }
 
@@ -168,12 +172,12 @@ input {
   background-color: transparent;
   display: block;
 }
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield !important;
   -webkit-appearance: none;
   width: 100%;
@@ -222,7 +226,7 @@ input[type='number'] {
   right: 0px;
 }
 
-body.dark .scrollbutton{
+body.dark .scrollbutton {
   filter: invert(100%);
 }
 body.dark .github-corner {
@@ -243,7 +247,8 @@ body.dark .github-corner {
 .page-a {
   width: 400px;
   height: calc(11.7 * 400px / 8.3); /* A4 Ratio */
-  background: #fff;
+  background: var(--background-img);
+  background-size: cover;
   border: 1px solid var(--elevation-background);
   font-size: 10pt;
   position: relative;
@@ -423,11 +428,11 @@ input {
   color: var(--font-color-primary);
 }
 
-input[type='file']::-webkit-file-upload-button {
+input[type="file"]::-webkit-file-upload-button {
   display: none;
 }
-input[type='file']::before {
-  content: 'Choose File';
+input[type="file"]::before {
+  content: "Choose File";
   display: inline-block;
   background-color: var(--background-primary);
   white-space: nowrap;

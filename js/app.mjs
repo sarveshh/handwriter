@@ -50,6 +50,23 @@ const EVENT_MAP = {
       setInkColor(e.target.value);
     }
   },
+  '#canvas-background': {
+    on: 'change',
+    action: (e) => {
+      document.querySelector('.page-a').style.setProperty('--background-img', e.target.value);
+      if ($(this).val() != '#fff') {
+        $("#hidden-div").show();
+      } else {
+        $("#hidden-div").hide();
+      }
+    }
+  },
+  '#canvas-style': {
+    on: 'change',
+    action: (e) => {
+      document.querySelector('.page-a').style.setProperty('--background-img', e.target.value)
+    }
+  },
   '#paper-margin-toggle': {
     on: 'change',
     action: () => {

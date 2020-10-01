@@ -7,6 +7,8 @@ body {
   --font-family-primary: "Roboto", cursive;
   --handwriting-font: "Homemade Apple", cursive;
   --background-img: #fff;
+  --border-bottom : 2px solid pink;
+  /* 2px groove #000033 2px double #00001a */
   --primary-color: #1a73e8;
   --ink-color: #000f55;
   --label-color: #333;
@@ -283,7 +285,7 @@ body.dark .github-corner {
 
 .margined .top-margin {
   height: 50px;
-  border-bottom: 2px solid pink;
+  border-bottom: var(--border-bottom);
   width: 100%;
   display: block;
   overflow-y: hidden;
@@ -293,7 +295,7 @@ body.dark .github-corner {
   width: 50px;
   height: calc(100%);
   display: inline-block;
-  border-right: 2px solid pink;
+  border-right: var(--border-bottom);
   top: 0px;
   padding-top: 50px;
   overflow-x: hidden;

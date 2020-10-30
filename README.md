@@ -1,8 +1,12 @@
 <h1 align="center">Welcome to handwriter 👋</h1>
 <p align="center">
-  For a simple demo of
+  For a simple demo of <strong>Handwriter<strong> visit
   <a href="https://handwriterr.herokuapp.com/">
-    Handwriter
+    Here
+  </a>
+  or
+  <a href="https://sarveshh.github.io/handwriter/">
+    Here
   </a><br>
   This project is still under development
 </p>

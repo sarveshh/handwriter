@@ -240,6 +240,9 @@ body.dark .ocr-result {
 body.dark .modal {
   filter: invert(100%);
 }
+body.dark .title {
+  filter: invert(100%);
+}
 body.dark .modal-title  {
   filter: invert(100%);
 }

@@ -25,6 +25,7 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "multer": "^1.4.2",

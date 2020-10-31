@@ -62,7 +62,7 @@
           <form id="my-form" action="/detect" method="post" enctype="multipart/form-data">
             <label class="btn btn-primary">
               Upload<input type="file" name="avatar" class="uploadFile img" value="Upload Photo"
-                style="width: 0px;height: 0px;overflow: hidden; position: fixed;">
+                style="width: 0px;height: 0px;overflow: hidden; position: fixed;display: none;">
             </label>
           </form>
         </div>
@@ -79,8 +79,8 @@
         <div class="col-sm-4">
           <div class="text-center">
             <h3>Step 3: Results </h3>
-            <pre></pre>
-            <button type="button" class="btn btn-outline-dark"
+            <pre class="ocr-result"></pre>
+            <button type="button" class="btn btn-outline-dark copy-clipboard"
               onclick="copyToClipboard($('pre')[0].innerHTML)">Copy</button>
           </div>
         </div>

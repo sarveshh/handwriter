@@ -227,8 +227,23 @@ input[type="number"] {
   z-index: 99999;
   right: 0px;
 }
+body.dark #my-form {
+  filter: invert(100%);
+}
 
 body.dark .scrollbutton {
+  filter: invert(100%);
+}
+body.dark .ocr-result {
+  filter: invert(100%);
+}
+body.dark .modal {
+  filter: invert(100%);
+}
+body.dark .modal-title  {
+  filter: invert(100%);
+}
+body.dark .text-center {
   filter: invert(100%);
 }
 body.dark .github-corner {

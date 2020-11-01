@@ -53,7 +53,7 @@
           <p style="font-size: 15px;">No more lengthy assignments</p>
         </span>
       </div>
-      <a class="scrollbutton" href="#input" style="margin-right: 18px;">
+      <a class="scrollbutton" href="#workflow" style="margin-right: 18px;">
         <span>&emsp;</span>
         <img src="./images/scroll.svg" height="40px">
         <div class="circle" style="animation-delay: -3s"></div>
@@ -64,35 +64,43 @@
       </a>
     </div>
 
-    <div class="fullpage">
+    <div class="fullpage" id="workflow">
+      <hr />
       <h1 class="w3-center">
         What do you wanna do?
-      </h1><br><br>
-      <div class="row">
-        <div class="column" style="border-right: 2px solid gray;text-align: center;">
-          <h2>Image to Text (OCR)</h2>
+      </h1>
+      <div class="row workflow-wrap">
+        <div class="column workflow-ocr" style="border-right: 2px solid gray;text-align: center;" href="#workflow-ocr">
+          <h2>Image to Text (OCR) <small>(Beta) </small><a style="font-size: 1.1rem;"
+              title="Works locally only, for now!">
+              &#9432;
+            </a></h2>
+
           <p>Detect text from Images.
-            <br/>Copy it and proceed to Step 2 (Optional)</p><br>
-            <img src="./images/demo1.png" width="300px" height="420px" style="border: 1px solid #ccc">
+            <br />Copy output and proceed to handwriting (Optional)</p><br>
+          <img src="./images/demo1.png" width="300px" height="420px" style="border: 1px solid #ccc">
         </div>
-        <div class="column" style="border-right: 2px solid gray; text-align: center;">
+        <div class="column workflow-handwrite" style="border-right: 2px solid gray; text-align: center;">
           <h2>Convert to Handwriting</h2>
           <p>Have some text you can copy? Yay! Just paste it!</p><br>
           <img src="./samples/sample4.jpg" width="300px" height="420px" style="border: 1px solid #ccc">
         </div>
-        <div class="column" style="text-align: center;">
+        <div class="column workflow-draw" style="text-align: center;">
           <h2>Draw and save</h2>
           <p>Need to export some artwork?</p><br>
           <img src="./images/demo2.jpg" width="300px" height="420px" style="border: 1px solid #ccc">
         </div>
       </div>
-
     </div>
+    <hr id="workflow-ocr"/>
 
-    <div class="container">
+    <div class="fullpage">
+      <h1 class="w3-center">
+        Upload images to detect text
+      </h1> <br><br>
       <div class="row">
         <div class="col-sm-4 imgUp">
-          <h3>Step 1: Upload text-Image</h3>
+          <h3>Step 1: Upload text-Image</h3><br>
           <div class="imagePreview "></div>
           <form id="my-form" action="/detect" method="post" enctype="multipart/form-data">
             <label class="btn btn-primary">
@@ -114,7 +122,8 @@
             <h3 class="title">Step 3: Results </h3>
             <pre class="ocr-result"></pre>
             <button type="button" class="btn btn-outline-dark copy-clipboard"
-              onclick="copyToClipboard($('pre')[0].innerHTML)">Copy</button>
+              onclick="copyToClipboard($('pre')[0].innerHTML)" onmouseout="outFunc()"><span class="tooltiptext" id="myTooltip">Copy to
+                clipboard</span>Copy</button>
           </div>
         </div>
       </div>
@@ -138,9 +147,10 @@
         </div>
       </div>
     </div>
+    <hr id="workflow-handwrite"/>
+   
 
     <div class="fullpage" id="input">
-
       <section class="generate-image-section">
         <form id="generate-image-form">
           <div class="display-flex output-grid responsive-flex">
@@ -156,8 +166,6 @@
                   </button>
                 </div>
               </span>
-
-
               <div class="flex-1 page-container">
                 <div class="page-a margined lines">
                   <div contenteditable="true" class="top-margin"></div>
@@ -442,6 +450,7 @@
         </form>
       </section>
     </div><br>
+  
 
     <!-- OUTPUT -->
     <div id="section3" class="fullpage-edit">
@@ -461,7 +470,7 @@
   <section class="draw-container popup-container">
     <button class="close-button">&times;</button>
     <div class="display-flex responsive-flex">
-      <canvas id="diagram-canvas" style="background-color: #fff;" height="300px" width="600px"></canvas>
+      <canvas id="diagram-canvas" style="background-color: #fff;width: 80vw;height: 80vh;"></canvas>
       <div class="flex-1 buttons-container padding-around">
         <button id="add-to-paper-button" style="margin-top: 5px; margin-bottom: 5px;">
           Add to Paper
@@ -479,6 +488,13 @@
       </div>
     </div>
   </section>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="2" />
+      </filter>
+    </defs>
+  </svg>
   </div>
 
   <script src="./js/vendors/jquery.min.js"></script>

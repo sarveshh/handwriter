@@ -437,6 +437,7 @@ legend {
   font-size: 0.88rem;
   padding: 0px 6px;
   color: var(--font-color-primary);
+  max-width: fit-content !important;
 }
 
 select,
@@ -504,7 +505,7 @@ input[type="file"]::before {
 
 .imagePreview {
   width: 100%;
-  height: 200px;
+  height: 500px;
   background-position: center center;
   background-color: #fff;
   /* background-size: cover; */
@@ -565,4 +566,60 @@ pre {
   content: "";
   display: table;
   clear: both;
+}
+
+.column {
+  display: inline-block;
+  transition: 0.25s all ease-in-out;
+}
+.workflow-handwrite {
+  color: black;
+}
+.workflow-wrap {
+  margin: 100px auto;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+.workflow-wrap:hover .column {
+  filter: url("#blur");
+}
+.workflow-wrap:hover .column:hover {
+  transform: scale(1.2, 1.2);
+  filter: none;
+}
+
+
+
+.text-center .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top:22%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.text-center .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.text-center:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

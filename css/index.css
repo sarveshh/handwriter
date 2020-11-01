@@ -7,7 +7,7 @@ body {
   --font-family-primary: "Roboto", cursive;
   --handwriting-font: "Homemade Apple", cursive;
   --background-img: #fff;
-  --border-bottom : 2px solid pink;
+  --border-bottom: 2px solid pink;
   /* 2px groove #000033 2px double #00001a */
   --primary-color: #1a73e8;
   --ink-color: #000f55;
@@ -243,7 +243,7 @@ body.dark .modal {
 body.dark .title {
   filter: invert(100%);
 }
-body.dark .modal-title  {
+body.dark .modal-title {
   filter: invert(100%);
 }
 body.dark .text-center {
@@ -502,61 +502,55 @@ input[type="file"]::before {
   }
 }
 
-
-
-
 .imagePreview {
   width: 100%;
   height: 200px;
   background-position: center center;
-background-color:#fff;
+  background-color: #fff;
   /* background-size: cover; */
   background-size: 100%;
-background-repeat:no-repeat;
+  background-repeat: no-repeat;
   display: inline-block;
-box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
 }
-.btn-primary
-{
-display:block;
-border-radius:0px;
-box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
-margin-top:-5px;
+.btn-primary {
+  display: block;
+  border-radius: 0px;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+  margin-top: -5px;
 }
-.del
-{
-position:absolute;
-top:0px;
-right:15px;
-width:30px;
-height:30px;
-text-align:center;
-line-height:30px;
-background-color:rgba(255,255,255,0.6);
-cursor:pointer;
+.del {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
-.imgAdd
-{
-width:30px;
-height:30px;
-border-radius:50%;
-background-color:#4bd7ef;
-color:#fff;
-box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
-text-align:center;
-line-height:30px;
-margin-top:0px;
-cursor:pointer;
-font-size:15px;
+.imgAdd {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4bd7ef;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 30px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-pre{
-word-wrap: break-word;
-font-size: medium;
-background-color: whitesmoke;
-padding:3%;
-border-radius: 2%;
-border:solid 2px whitesmoke;
+pre {
+  word-wrap: break-word;
+  font-size: medium;
+  background-color: whitesmoke;
+  padding: 3%;
+  border-radius: 2%;
+  border: solid 2px whitesmoke;
 }
 
 * {

@@ -1,4 +1,3 @@
-
 .dark-mode-toggle {
   cursor: pointer;
   position: absolute;
@@ -28,7 +27,6 @@ body.dark .dark-mode-toggle .moon {
 body.dark .dark-mode-toggle .sun {
   display: none;
 }
-
 
 .switch-toggle {
   position: relative;

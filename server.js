@@ -1,19 +1,19 @@
-var express = require('express')
-var path = require('path')
+var express = require("express");
+var path = require("path");
 var cookieParser = require("cookie-parser");
 var Tesseract = require("tesseract.js");
 
 var multer = require("multer");
 
-var app = express()
+var app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(__dirname + '/'));
-app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+app.use(express.static(__dirname + "/"));
+app.set("views", path.join(__dirname, "views"));
+app.engine("html", require("ejs").renderFile);
+app.set("view engine", "html");
 
 const storage = multer.diskStorage({
   destination: (req, res, cb) => {

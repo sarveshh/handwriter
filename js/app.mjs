@@ -65,13 +65,17 @@ const EVENT_MAP = {
   "#canvas-style": {
     on: "change",
     action: (e) => {
-      document.querySelector(".page-a").style.setProperty("--background-img", e.target.value);
+      document
+        .querySelector(".page-a")
+        .style.setProperty("--background-img", e.target.value);
     },
   },
   "#margin-color": {
     on: "change",
     action: (e) => {
-      document.querySelector(".margined").style.setProperty("--border-bottom", e.target.value);
+      document
+        .querySelector(".margined")
+        .style.setProperty("--border-bottom", e.target.value);
     },
   },
   "#paper-margin-toggle": {

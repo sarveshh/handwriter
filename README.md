@@ -61,7 +61,7 @@ You can also suggest a new feature by creating an Issue. Please wait for confirm
 
 ### Good for First Timers
 
-- [Add your own handwriting font](https://github.com/sarveshh/handwriter/add_your_own_handwriting.md)
+- [Add your own handwriting font](https://github.com/sarveshh/handwriter/blob/master/add_your_own_handwriting.md)
 - Add your college assignment sheets, for example, *select ACE instead of general in Canvas Background.*
 
 ## 🙏🏻 Acknowledgements

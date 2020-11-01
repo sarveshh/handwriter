@@ -55,7 +55,7 @@
 
 Contributions, issues and feature requests are welcome!<br />
 
-Feel free to check the [issues page](https://github.com/sarveshh/handwriter/issues) for any open issues. If this is your first time contributing to Open Source, check out the [Contributing Guidelines](https://github.com/sarveshh/handwriter/how_to_contribute.md).
+Feel free to check the [issues page](https://github.com/sarveshh/handwriter/issues) for any open issues. If this is your first time contributing to Open Source, check out the [Contributing Guidelines](https://github.com/sarveshh/handwriter/blob/master/how_to_contribute.md).
 
 You can also suggest a new feature by creating an Issue. Please wait for confirmation before working on it.
 

@@ -558,3 +558,17 @@ padding:3%;
 border-radius: 2%;
 border:solid 2px whitesmoke;
 }
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

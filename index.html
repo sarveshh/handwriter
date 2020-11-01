@@ -2,11 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="all">
+  <meta name="googlebot" content="all">
+  <meta name="geo.position" content="19.0760°N, 72.8777°E">
+  <meta name="geo.placename" content="Mumbai, Maharashtra">
+  <meta name="geo.region" content="India">
+  <meta name="description" content="Output your assignments in a few clicks!">
+  <meta name="keywords" content="Handwriter, Text-to-handwriting, handwriting-to-text">
+  <meta name="author" content="Sarvesh Patil">
+
   <title>Handwriter</title>
   <link rel="icon" href="./images/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Cedarville+Cursive&family=Handlee&family=Homemade+Apple&family=Indie+Flower&family=Kalam:wght@300&family=Kristi&family=Liu+Jian+Mao+Cao&family=Nothing+You+Could+Do&family=Roboto&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Cedarville+Cursive&family=Handlee&family=Homemade+Apple&family=Indie+Flower&family=Kalam:wght@300&family=Kristi&family=Liu+Jian+Mao+Cao&family=Nothing+You+Could+Do&family=Roboto&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/external/bootstrap.min.css">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/features.css" />
@@ -53,9 +65,25 @@
     </div>
 
     <div class="fullpage">
-      <h1>
+      <h1 class="w3-center">
         What do you wanna do?
-      </h1>
+      </h1><br><br>
+      <div class="row">
+        <div class="column" style="border-right: 2px solid gray;text-align: center;">
+          <h2>Image to Text (OCR)</h2>
+          <p>Detect text from Images.
+            Copy it and proceed to Step 2 (Optional)</p>
+        </div>
+        <div class="column" style="border-right: 2px solid gray; text-align: center;">
+          <h2>Convert to Handwriting</h2>
+          <p>Have some text you can copy? Yay! Just paste it!</p>
+        </div>
+        <div class="column" style="text-align: center;">
+          <h2>Draw and save</h2>
+          <p>Need to export some artwork?</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="container">
@@ -97,8 +125,7 @@
             </div>
             <div class="modal-body">
               <div class="text-center" style="background:whitesmoke">
-                <img src="./images/modal.gif" alt="Modal" srcset="" width="80%"
-                  height="80%">
+                <img src="./images/modal.gif" alt="Modal" srcset="" width="80%" height="80%">
               </div>
             </div>
             <div class="modal-footer" style="padding-bottom:0;">
@@ -110,7 +137,7 @@
     </div>
 
     <div class="fullpage" id="input">
-      
+
       <section class="generate-image-section">
         <form id="generate-image-form">
           <div class="display-flex output-grid responsive-flex">
@@ -455,49 +482,8 @@
   <script src="./js/vendors/bootstrap.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
-  <!-- <script src="./js/vendors/jquery-3.5.1.min.js"></script> -->
   <script type="module" src="js/app.mjs"></script>
   <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
-  <script>
-    function toggleTheme(toggleButton) {
-      if (document.body.classList.contains('dark')) {
-        document.body.classList.add('fade-in-light');
-        document.body.classList.remove('dark');
-        document.body.classList.remove('fade-in-dark');
-        window.localStorage.setItem('prefers-theme', 'light');
-        if (toggleButton) {
-          toggleButton.setAttribute('aria-pressed', false);
-          toggleButton.setAttribute('aria-label', 'Activate Dark Mode');
-        }
-      } else {
-        document.body.classList.add('fade-in-dark');
-        document.body.classList.add('dark');
-        document.body.classList.remove('fade-in-light');
-        window.localStorage.setItem('prefers-theme', 'dark');
-        if (toggleButton) {
-          toggleButton.setAttribute('aria-pressed', true);
-          toggleButton.setAttribute('aria-label', 'Activate Light Mode');
-        }
-      }
-    }
-
-    const localPreference = window.localStorage.getItem('prefers-theme');
-    if (localPreference) {
-      if (localPreference === 'light') document.body.classList.remove('dark');
-      else document.body.classList.add('dark');
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark');
-    }
-
-
-    function openModal() {
-      document.getElementById('myModal').style.display = "block";
-    }
-
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
-  </script>
 </body>
 
 </html>

@@ -59,6 +59,7 @@ body {
   padding: 40px 100px;
   font-size: 1.05rem;
   font-family: var(--font-family-primary);
+  overflow: auto;
 }
 html {
   scroll-behavior: smooth;
@@ -66,7 +67,7 @@ html {
 #input {
   height: max-content;
 }
-.fullpage {
+.fullpagehero {
   height: 100vh;
   width: 100%;
 }
@@ -84,7 +85,7 @@ html {
 
 .heading {
   font-size: 9vw;
-  margin-bottom: 35vh;
+  margin-top: 20vh;
 }
 
 .scrollbutton {
@@ -92,6 +93,12 @@ html {
   cursor: pointer;
   bottom: 8vh;
   position: absolute;
+}
+.feature-heading{
+  font-size: 4vw;
+}
+.feature-description{
+  font-size: 2vw;
 }
 .circle {
   border-radius: 50%;
@@ -380,6 +387,10 @@ body.dark .github-corner {
   body {
     padding: 100px 5px;
   }
+  .category-grid {
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+  }
   h1 {
     margin-top: 20px;
     font-size: 3rem;
@@ -498,10 +509,15 @@ input[type="file"]::before {
   transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .category-grid {
-    grid-auto-flow: row;
-    grid-auto-rows: 1fr;
+@media only screen and (max-width: 990px) { 
+  .workflow-big { 
+    display: none; 
+  }
+  .scrollbutton-lg { 
+    display: none; 
+  }
+  #workflow-handwrite{
+    margin-bottom: 25vh;
   }
 }
 

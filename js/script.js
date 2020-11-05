@@ -111,3 +111,9 @@ $(".workflow-handwrite").click(function() {
 $(".workflow-draw").click(function() {
   $('#draw-diagram-button').click();
 });
+
+$(".scrollbutton-sm").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#workflow-sm").offset().top},
+      'slow');
+});

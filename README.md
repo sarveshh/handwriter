@@ -1,14 +1,18 @@
 #  👋
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/sarveshh/sarveshh/main/Handwriter.png" alt="Hero image"/>
+  <a href="https://gitpod.io/#snapshot/949eded8-4803-4bda-aa24-2c3d2a9f1af2"><img alt="Open in Gitpod" src="https://gitpod.io/button/open-in-gitpod.svg"> </a>
 <p/>
 <h1 align="center">Welcome to handwriter 👋</h1>
 <p align="center">
-  For a simple demo of <strong>Handwriter<strong> visit &emsp; <br>
-  <a href="https://gitpod.io/#snapshot/949eded8-4803-4bda-aa24-2c3d2a9f1af2"><img alt="Open in Gitpod" src="https://gitpod.io/button/open-in-gitpod.svg" height="28px"> </a> <small>&emsp; Run npm run devStart here</small><br>
+  For a simple demo of <strong>Handwriter<strong> :- <br>
+ 
+  <a href="https://gitpod.io/#snapshot/949eded8-4803-4bda-aa24-2c3d2a9f1af2/">
+    Run 'npm run devStart' here
+  </a>
  or
   <a href="https://handwriterr.herokuapp.com/">
-    Here
+    Visit here
   </a>
 </p>
   <p>

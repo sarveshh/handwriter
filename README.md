@@ -4,15 +4,10 @@
 <p/>
 <h1 align="center">Welcome to handwriter 👋</h1>
 <p align="center">
-  For a simple demo of <strong>Handwriter<strong> visit
-  <a href="https://5000-c61a86bc-08eb-46fa-a901-fc097fa6bd36.ws-us02.gitpod.io/">
-     Here
-  </a> or
+  For a simple demo of <strong>Handwriter<strong> visit &emsp; <br>
+  <a href="https://gitpod.io/#snapshot/949eded8-4803-4bda-aa24-2c3d2a9f1af2"><img alt="Open in Gitpod" src="https://gitpod.io/button/open-in-gitpod.svg"> &emsp; Run npm run devStart here</a><br>
+ or
   <a href="https://handwriterr.herokuapp.com/">
-    Here
-  </a>
-  or
-  <a href="https://sarveshh.github.io/handwriter/">
     Here
   </a>
 </p>

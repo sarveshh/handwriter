@@ -17,13 +17,10 @@
 </p>
   <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.11-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/jayehernandez/letra#readme" target="_blank">
+  <a href="https://github.com/sarveshh/handwriter#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/jayehernandez/letra/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/jayehernandez/letra-extension/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/sarveshh/handwriter/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/jayehernandez/letra-extension" />
   </a>
 </p>

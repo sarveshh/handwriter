@@ -21,7 +21,7 @@
   "author": "Sarvesh Patil <sarveshp273@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.20",
     "serve": "^11.3.2"
   },
   "dependencies": {
